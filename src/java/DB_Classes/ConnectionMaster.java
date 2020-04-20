@@ -13,7 +13,7 @@ public class ConnectionMaster {
         try {
                 Class.forName(DB_Config.DRIVER_REGISTER);
                 
-                System.out.println("DB location: " + DB_Config.DB_LOCATION);
+                System.out.println("DB location updated: " + DB_Config.DB_LOCATION);
                 
                 connection = (Connection) DriverManager.getConnection(DB_Config.DB_LOCATION, DB_Config.USERNAME, DB_Config.PASSWORD);
                 //System.out.println("Database connected successfully");
