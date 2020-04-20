@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-mid {
+    float: left;
+    width: 38%;
+    padding: 5px;
+    height: 100%;
+    min-height: 1010px; /* Should be removed. Only for demonstration */
+    font-size: small;
+}
+
+.column-left {
+    float: left;
+    width: 35%;
+    font-size: small;
+    padding: 5px;
+    height: 100%;
+    min-height: 1010px; /* Should be removed. Only for demonstration */
+}
+
+.column-right {
+    float: left;
+    font-size: small;
+    width: 27%;
+    padding: 5px;
+    height: 100%;
+    min-height: 1010px; /* Should be removed. Only for demonstration */
+}
+
+.line{
+    width: auto;
+    border-bottom: 1px solid black;
+}
+
+
+.pellets{
+    margin: 5px;
+    float: left;
+}
+
+.class-scheduler{
+    table-layout: fixed;
+    width: 100%;
+    background-color: #ccffff; 
+}
+
+.grid{
+    height: 100px;
+}
+
+th{
+    background-color: #ffcc33;
+}
+
+
+table, th, td{
+    border: 1px solid black;
+    align-content: center;
+}
+
+.teachers, .students, .classrooms, .courses{
+    background-color: #ffffff;
+    text-align: center;
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+
+
+#current-routine-status{
+    margin: 10px;
+    border: 1px solid black;    
+}
+
+.move {
+    float: left;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#Clear-Recent-Moves{
+    background-color: #cccccc;
+}
+
+#new-move{
+    background-color: #ccff66;
+}
+
+
+
+#accept, #print {
+    display: block;
+    margin: 10px 0;
+    background-color: #33cc00;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#choose, #choose-teacher, #choose-student, #choose-classroom{
+    margin: 2px 0;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#db_codes{
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    background-color: #7ed321;
+    float: left;
+    cursor: pointer;
+}
+
+#db{
+    display: block;
+    margin: 10px 0;
+    background-color: #7ed321;
+    padding: 10px;
+    width: 45%;
+    float: right;
+    cursor: pointer;
+}
+
+#print-by-parameter{
+    display: block;
+    margin: 5px 0;
+    background-color: #ffcc33;
+    padding: 5px;
+    width: 100%;        
+    cursor: pointer;
+}
+
+#remove {
+    display: block;
+    margin: 10px 0;
+    background-color: #ff6633;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+table.crs tr{
+    min-height: 30px;
+}
+
+/*table.crs th{
+    min-width: 90px;
+}*/
+
+#pellet-container{
+    border: 5px solid black;
+    box-sizing: border-box;
+    float: left;
+    margin: 5px;
+    background-color: #666600;
+}
+
+#dialog{
+    border: 4px solid #000000;
+}
+
+.tooltip {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip */
+    position: absolute;
+}
+
+#msg-container {
+    visibility: hidden;
+    position: absolute;
+}
+
+.btn {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: white;
+  color: #000000
+}
+
+#cancel {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+#cancel:hover {
+  background-color: white;
+  color: red;
+}
+
+#confirm {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+#confirm:hover {
+  background-color: white;
+  color: green;
+}
+
+#tableWrapper{
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffff00;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
