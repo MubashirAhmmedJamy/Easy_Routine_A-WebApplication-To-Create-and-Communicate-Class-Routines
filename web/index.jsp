@@ -9,10 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Easy Routine</title>
     </head>
     <body>
-        <h1>Hello World this is easy routine</h1>
+        <h1>Welcome to Easy Routine</h1>
         <a href="RoutineDesigner.jsp">Routine Designer</a>
         <a href="AdminPanel.jsp">Routine Designer</a>
     </body>
