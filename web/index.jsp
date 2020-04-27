@@ -13,5 +13,7 @@
     </head>
     <body>
         <h1>Hello World this is easy routine</h1>
+        <a href="RoutineDesigner.jsp">Routine Designer</a>
+        <a href="AdminPanel.jsp">Routine Designer</a>
     </body>
 </html>
