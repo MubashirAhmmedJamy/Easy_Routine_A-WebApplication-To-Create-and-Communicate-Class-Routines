@@ -14,6 +14,6 @@
     <body>
         <h1>Welcome to Easy Routine</h1>
         <a href="RoutineDesigner.jsp">Routine Designer</a>
-        <a href="AdminPanel.jsp">Routine Designer</a>
+        <a href="AdminPanel.jsp">Admin Panel</a>
     </body>
 </html>
